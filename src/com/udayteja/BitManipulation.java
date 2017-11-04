@@ -1,10 +1,7 @@
 package com.udayteja;
 
-/**
- * Created by Uday Teja on 11/4/2017.
- */
 public class BitManipulation {
-    public static void main(String args[]){
+    public static void main(String args[]) {
         byte a = 0; //00000000
         //COMPLEMENTING(~)*****************************************************************
         System.out.println("Complement of " + a + " is " + ~(a));
@@ -19,9 +16,9 @@ public class BitManipulation {
 
         //SIGNED LEFT SHIFT(<<)*******************************************************
         byte x1 = 23, output;
-        for(byte i = 0; i < 4; i++){
-           //Java by default returns an integer for bitshift.
-            System.out.println("Left shifting " + x1 + " by "+ i +" bit :" + (x1 << i));
+        for (byte i = 0; i < 4; i++) {
+            //Java by default returns an integer for bitshift.
+            System.out.println("Left shifting " + x1 + " by " + i + " bit :" + (x1 << i));
         }
         System.out.println("Left Bit shifting the maximum Integer value: " + Integer.MAX_VALUE + " becomes " + (Integer.MAX_VALUE << 1));
     }

@@ -1,8 +1,5 @@
 package com.udayteja;
 
-/**
- * Created by Uday Teja on 11/4/2017.
- */
 public class BinarySearchIterative {
     public static boolean binarySearchIterative(int[] array, int x) {
         int left = 0;
@@ -20,7 +17,7 @@ public class BinarySearchIterative {
         return false;
     }
 
-    public static void main(String args[]){
+    public static void main(String args[]) {
         int array[] = {12, 23, 45, 678, 234234, 8239124, 80001083};
         System.out.println(binarySearchIterative(array, 204234));
     }

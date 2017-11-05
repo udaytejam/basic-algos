@@ -53,5 +53,18 @@ public class BitManipulation {
             //Java by default returns an integer for bit shift
             System.out.println("Unsigned Right shifting " + x2 + " by " + i + " bit :" + (x2 >>> i));
         }
+
+        //There is NO 'Signed left shift' because it wouldn't make sense to ignore the MSB beside the Sign bit.
+        //////OTHER BIT OPERATIONS(&, |, ^)-----------------------------------------------
+
+        //Getting 4th bit of 44(101100), for example. We need to use "&" operator
+        System.out.println("The 5th bit of 44 is: " + ((44 & (1 << 4)) > 0));
+        //You shift n-1 bits to the left to get nth bit
+
+        //Setting the 4th bit of 44. 44(101100) becomes (111100). We need to use '|' operator
+        System.out.println("Setting 5th bit of 44 to 1: 44 becomes " + (44 | (1 << 4)));
+
+        //Clearing the 3rd bit of 44. Result = 101000. We need to '&' the number with ~(1 << (n-1))
+        System.out.println("Clearing the 3rd bit of 44: 44 becomes " + (44 & ~(1 << 3)));
     }
 }
